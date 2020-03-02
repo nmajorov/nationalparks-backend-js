@@ -1,0 +1,27 @@
+{
+  "name": "nationalparks-js",
+  "description": "A simple geospatial mapping application powered by Leaflet maps",
+  "version": "0.1.0",
+  "private": false,
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "restify": "^7.0.0",
+    "config-multipaas": "0.2.2",
+    "mongojs": "^2.5.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift-roadshow/nationalparks-js.git"
+  },
+  "scripts": {
+    "prestart": "npm run initdb",
+    "start": "node server.js",
+    "flushdb": "node bin/flushdb.js",
+    "initdb": "node bin/bootstrap.js"
+  },
+  "main": "server.js"
+}
